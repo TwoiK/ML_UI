@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Concrete Strength Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Concrete Strength Predictor</h1>
+        <form id="predictForm">
+            <label for="cs_value">Desired Compressive Strength (CS):</label>
+            <input type="number" id="cs_value" name="cs_value" required>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
